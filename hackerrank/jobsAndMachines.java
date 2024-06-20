@@ -47,7 +47,9 @@ public class Solution {
             dpB[0]=b[0];
             for(int i=1;i<n;i++){
                 dpA[i]=Math.min(dpA[i-1],dpB[i-1]+tt)+a[i];
+                
 //transition cost is added when we change from one machine to another machine
+                
                 dpB[i]=Math.min(dpB[i-1],dpA[i-1]+tt)+b[i];
             }
             out.write(Math.min(dpA[n-1],dpB[n-1])+"\n");
