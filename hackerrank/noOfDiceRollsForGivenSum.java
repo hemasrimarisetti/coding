@@ -21,6 +21,7 @@ public class Solution {
         BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
         int t=Integer.parseInt(br.readLine());
         int queries[]=new int[t];
+        
         int max=100000;
         int mod=1000000007;
         for(int i=0;i<t;i++){
